@@ -165,10 +165,13 @@ class game:
                 enemies.append(Enemy(r.choice(enemySprites),r.randint(100,700),0, 0, 1, 5,30))
 
             if shot >= neededshot:
-                import GalacticWars
-                GalacticWars.menu.missionComplete(score,shot,"P1L1")
+                s = shot
+                sc = score
 
                 game.killGame()
+
+                import GalacticWars
+                GalacticWars.menu.missionComplete(sc,s,"P1L1")
                 
             if gameThings["Health"] < 10:
                 lh = makeSound("Assets/Sounds/Game/Effects/lowhealth.wav")
@@ -337,10 +340,13 @@ class game:
             print(time)
 
             if time >= neededtime:
-                import GalacticWars
-                GalacticWars.menu.missionComplete(score,shot,"P1L2")
+                s = shot
+                sc = score
 
                 game.killGame()
+
+                import GalacticWars
+                GalacticWars.menu.missionComplete(sc,s,"P1L2")
 
             if x > 700:
                 x = 0
@@ -494,10 +500,13 @@ class game:
                 enemies.append(Enemy(r.choice(enemySprites),800,r.randint(100,500), -2, 0, 5,30,-90))
 
             if shot >= neededshot:
-                import GalacticWars
-                GalacticWars.menu.missionComplete(score,shot,"P1L3")
+                s = shot
+                sc = score
 
                 game.killGame()
+
+                import GalacticWars
+                GalacticWars.menu.missionComplete(sc,s,"P1L3")
 
             if gameThings["Health"] < 10:
                 lh = makeSound("Assets/Sounds/Game/Effects/lowhealth.wav")
@@ -638,10 +647,14 @@ class game:
                 enemies.append(Enemy(r.choice(enemySprites),r.randint(100,700),0, 0, 1, 5,30))
 
             if shot >= neededshot:
-                import GalacticWars
-                GalacticWars.menu.missionComplete(score,shot,"P1L4")
+                s = shot
+                sc = score
 
                 game.killGame()
+
+                import GalacticWars
+                GalacticWars.menu.missionComplete(sc,s,"P1L4")
+
 
             if gameThings["Health"] < 10:
                 lh = makeSound("Assets/Sounds/Game/Effects/lowhealth.wav")
@@ -809,10 +822,13 @@ class game:
             y += ySpeed
 
             if shot >= neededshot:
-                import GalacticWars
-                GalacticWars.menu.missionComplete(score,shot,"P2L1")
+                s = shot
+                sc = score
 
                 game.killGame()
+
+                import GalacticWars
+                GalacticWars.menu.missionComplete(sc,s,"P2L1")
 
             if x > 700:
                 x = 0
@@ -968,10 +984,13 @@ class game:
                 enemies.append(Enemy(r.choice(enemySprites),800,r.randint(100,500), -2.25, 0, 5,50,-90))
 
             if time >= neededtime:
-                import GalacticWars
-                GalacticWars.menu.missionComplete(score,shot,"P2L2")
+                s = shot
+                sc = score
 
                 game.killGame()
+
+                import GalacticWars
+                GalacticWars.menu.missionComplete(sc,s,"P2L2")
 
             if gameThings["Health"] < 10:
                 lh = makeSound("Assets/Sounds/Game/Effects/lowhealth.wav")
@@ -1140,10 +1159,14 @@ class game:
             print(time)
 
             if time >= neededtime:
-                import GalacticWars
-                GalacticWars.menu.missionComplete(score,shot,"P2L3")
+                s = shot
+                sc = score
 
                 game.killGame()
+
+                import GalacticWars
+                GalacticWars.menu.missionComplete(sc,s,"P2L3")
+
 
             if x > 700:
                 x = 0
@@ -1299,10 +1322,13 @@ class game:
                 enemies.append(Enemy(r.choice(enemySprites),800,r.randint(100,500), -2.25, 0, 5,50,-90))
 
             if time >= neededtime:
-                import GalacticWars
-                GalacticWars.menu.missionComplete(score,shot,"P2L4")
+                s = shot
+                sc = score
 
                 game.killGame()
+
+                import GalacticWars
+                GalacticWars.menu.missionComplete(sc,s,"P2L4")
 
             if gameThings["Health"] < 10:
                 lh = makeSound("Assets/Sounds/Game/Effects/lowhealth.wav")
@@ -1470,10 +1496,13 @@ class game:
             y += ySpeed
 
             if shot >= neededshot:
-                import GalacticWars
-                GalacticWars.menu.missionComplete(score,shot,"P2L5")
+                s = shot
+                sc = score
 
                 game.killGame()
+
+                import GalacticWars
+                GalacticWars.menu.missionComplete(sc,s,"P2L5")
 
             if x > 700:
                 x = 0
@@ -1631,10 +1660,13 @@ class game:
                 enemies.append(Enemy(r.choice(enemySprites),r.randint(100,700),0, 0, 1.25, 5,50))
 
             if time >= neededtime:
-                import GalacticWars
-                GalacticWars.menu.missionComplete(score,shot,"P2L6")
+                s = shot
+                sc = score
 
                 game.killGame()
+
+                import GalacticWars
+                GalacticWars.menu.missionComplete(sc,s,"P2L6")
                 
             if gameThings["Health"] < 10:
                 lh = makeSound("Assets/Sounds/Game/Effects/lowhealth.wav")
@@ -1776,10 +1808,14 @@ class game:
                 enemies.append(Enemy(r.choice(enemySprites),800,r.randint(100,500), -2.5, 0, 5,75,-90))
 
             if time >= neededtime:
-                import GalacticWars
-                GalacticWars.menu.missionComplete(score,shot,"P3L1")
+                s = shot
+                sc = score
 
                 game.killGame()
+
+                import GalacticWars
+                GalacticWars.menu.missionComplete(sc,s,"P3L1")
+
 
             if gameThings["Health"] < 10:
                 lh = makeSound("Assets/Sounds/Game/Effects/lowhealth.wav")
@@ -1923,10 +1959,13 @@ class game:
                 enemies.append(Enemy(r.choice(enemySprites),r.randint(100,700),0, 0, 1.50, 5,75))
 
             if shot >= neededshot:
-                import GalacticWars
-                GalacticWars.menu.missionComplete(score,shot,"P3L2")
+                s = shot
+                sc = score
 
                 game.killGame()
+
+                import GalacticWars
+                GalacticWars.menu.missionComplete(sc,s,"P3L2")
                 
             if gameThings["Health"] < 10:
                 lh = makeSound("Assets/Sounds/Game/Effects/lowhealth.wav")
@@ -2095,10 +2134,13 @@ class game:
             time += 0.1
 
             if time >= neededtime:
-                import GalacticWars
-                GalacticWars.menu.missionComplete(score,shot,"P3L3")
+                s = shot
+                sc = score
 
                 game.killGame()
+
+                import GalacticWars
+                GalacticWars.menu.missionComplete(s,s,"P3L3")
 
             if x > 700:
                 x = 0
@@ -2258,10 +2300,13 @@ class game:
                 enemies.append(Enemy(r.choice(enemySprites),r.randint(100,700),0, 0, 1.50, 5,75))
 
             if time >= neededtime:
-                import GalacticWars
-                GalacticWars.menu.missionComplete(score,shot,"P3L4")
+                s = shot
+                sc = score
+
                 game.killGame()
 
+                import GalacticWars
+                GalacticWars.menu.missionComplete(sc,s,"P3L4")
                 
             if gameThings["Health"] < 10:
                 lh = makeSound("Assets/Sounds/Game/Effects/lowhealth.wav")
@@ -2429,10 +2474,13 @@ class game:
             y += ySpeed
 
             if shot >= neededshot:
-                import GalacticWars
-                GalacticWars.menu.missionComplete(score,shot,"P3L5")
+                s = shot
+                sc = score
 
                 game.killGame()
+
+                import GalacticWars
+                GalacticWars.menu.missionComplete(sc,s,"P3L5")
 
             if x > 700:
                 x = 0
@@ -2588,10 +2636,13 @@ class game:
                 enemies.append(Enemy(r.choice(enemySprites),800,r.randint(100,500), -3, 0, 10,125,-90))
 
             if shot >= neededshot:
-                import GalacticWars
-                GalacticWars.menu.missionComplete(score,shot,"P4L1")
+                s = shot
+                sc = score
 
                 game.killGame()
+
+                import GalacticWars
+                GalacticWars.menu.missionComplete(sc,s,"P4L1")
 
             if gameThings["Health"] < 20:
                 lh = makeSound("Assets/Sounds/Game/Effects/lowhealth.wav")
@@ -2737,9 +2788,13 @@ class game:
                 enemies.append(Enemy(r.choice(enemySprites),r.randint(100,700),0, 0, 2, 10,125))
 
             if time >= neededtime:
-                import GalacticWars
-                GalacticWars.menu.missionComplete(score,shot,"P4L2")
+                s = shot
+                sc = score
+
                 game.killGame()
+
+                import GalacticWars
+                GalacticWars.menu.missionComplete(sc,s,"P4L2")
 
                 
             if gameThings["Health"] < 20:
@@ -2908,10 +2963,13 @@ class game:
             y += ySpeed
 
             if shot >= neededshot:
-                import GalacticWars
-                GalacticWars.menu.missionComplete(score,shot,"P4L3")
+                s = shot
+                sc = score
 
                 game.killGame()
+
+                import GalacticWars
+                GalacticWars.menu.missionComplete(score,shot,"P4L3")
 
             if x > 700:
                 x = 0
@@ -3071,9 +3129,13 @@ class game:
                 enemies.append(Enemy(r.choice(enemySprites),r.randint(100,700),0, 0, 2, 10,125))
 
             if time >= neededtime:
-                import GalacticWars
-                GalacticWars.menu.missionComplete(score,shot,"P4L4")
+                s = shot
+                sc = score
+
                 game.killGame()
+
+                import GalacticWars
+                GalacticWars.menu.missionComplete(sc,s,"P4L4")
 
                 
             if gameThings["Health"] < 20:
@@ -3242,10 +3304,13 @@ class game:
             y += ySpeed
 
             if shot >= neededshot:
-                import GalacticWars
-                GalacticWars.menu.missionComplete(score,shot,"P4L5")
+                s = shot
+                sc = score
 
                 game.killGame()
+
+                import GalacticWars
+                GalacticWars.menu.missionComplete(sc,s,"P4L5")
 
             if x > 700:
                 x = 0
