@@ -121,6 +121,8 @@ class game:
         playMusic(-1)
 
         while play:
+
+            changeLabel(obj,"Destroy "+str(neededshot-shot)+" ships")
             
             scrollBackground(0,5)
 
@@ -270,6 +272,8 @@ class game:
         playMusic(-1)
 
         while play:
+
+            changeLabel(obj,"Survive the ambush: "+str(neededtime)-str(time))
 
             if keyPressed("w") or keyPressed("up"):
                 bulletX = 40
