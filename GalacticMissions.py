@@ -256,7 +256,7 @@ class game:
         scoret = newLabel("SCORE: "+str(score),32,"Forte","gray",0,35,'clear')
         showLabel(scoret)
 
-        obj = newLabel("Survive the ambush",32,"Forte","white",0,70,'clear')
+        obj = newLabel("Survive the attack",32,"Forte","white",0,70,'clear')
         showLabel(obj)
 
         contrl1 = newLabel("Use arrows or WASD to move the ship",18,"Forte","white",0,105,'clear')
@@ -273,7 +273,7 @@ class game:
 
         while play:
 
-            changeLabel(obj,"Survive the ambush: "+str(neededtime)-str(time))
+            changeLabel(obj,"Survive the attack: "+str(neededtime-int(time)))
 
             if keyPressed("w") or keyPressed("up"):
                 bulletX = 40
@@ -465,6 +465,8 @@ class game:
 
         while play:
 
+            changeLabel(obj,"Destroy "+str(neededshot-shot)+" ships")
+
             scrollBackground(-5,0)
 
             if keyPressed("w") or keyPressed("up"):
@@ -591,7 +593,7 @@ class game:
         scoret = newLabel("SCORE: "+str(score),32,"Forte","gray",0,35,'clear')
         showLabel(scoret)
 
-        obj = newLabel("Repeal an invasion",32,"Forte","white",0,70,'clear')
+        obj = newLabel("Survive the counterattack",32,"Forte","white",0,70,'clear')
         showLabel(obj)
 
         contrl1 = newLabel("Use arrows or WASD to move the ship",18,"Forte","white",0,105,'clear')
@@ -607,6 +609,8 @@ class game:
         playMusic(-1)
 
         while play:
+
+            changeLabel(obj,"Survive the counterattack: "+str(neededshot-shot))
             
             scrollBackground(0,5)
 
@@ -758,6 +762,8 @@ class game:
         playMusic(-1)
 
         while play:
+
+            changeLabel(obj,"Destroy "+str(neededshot-shot)+" enemies")
 
             if keyPressed("w") or keyPressed("up"):
                 bulletX = 40
@@ -931,7 +937,7 @@ class game:
         scoret = newLabel("SCORE: "+str(score),32,"Forte","gray",0,35,'clear')
         showLabel(scoret)
 
-        obj = newLabel("Reach the goal",32,"Forte","white",0,70,'clear')
+        obj = newLabel("Reach the base",32,"Forte","white",0,70,'clear')
         showLabel(obj)
 
         contrl1 = newLabel("Use arrows or WASD to move the ship",18,"Forte","white",0,105,'clear')
@@ -947,6 +953,8 @@ class game:
         playMusic(-1)
 
         while play:
+
+            changeLabel(obj,"Reach the base: "+str(neededtime-int(time)))
 
             scrollBackground(-5,0)
 
@@ -1059,7 +1067,7 @@ class game:
         ySpeed = 0
 
         time = 0
-        neededtime = r.randrange(450,600,50)
+        neededtime = r.randrange(400,600,50)
 
         maxSpeed = gameThings["MaxSpeed"]
 
@@ -1093,6 +1101,8 @@ class game:
         playMusic(-1)
 
         while play:
+
+            changeLabel(obj,"Survive until reinforcements arrive "+str(neededtime-int(time)))
 
             if keyPressed("w") or keyPressed("up"):
                 bulletX = 40
@@ -1269,7 +1279,7 @@ class game:
         scoret = newLabel("SCORE: "+str(score),32,"Forte","gray",0,35,'clear')
         showLabel(scoret)
 
-        obj = newLabel("Reach the goal",32,"Forte","white",0,70,'clear')
+        obj = newLabel("Escape from base",32,"Forte","white",0,70,'clear')
         showLabel(obj)
 
         contrl1 = newLabel("Use arrows or WASD to move the ship",18,"Forte","white",0,105,'clear')
@@ -1285,6 +1295,8 @@ class game:
         playMusic(-1)
 
         while play:
+
+            changeLabel(obj,"Escape from base: "+str(neededtime-int(time)))
 
             scrollBackground(-5,0)
 
@@ -1398,7 +1410,7 @@ class game:
 
         time = 0
 
-        neededshot = r.randrange(5,10,5)
+        neededshot = r.randrange(65,100,5)
 
         maxSpeed = gameThings["MaxSpeed"]
 
@@ -1432,6 +1444,8 @@ class game:
         playMusic(-1)
 
         while play:
+
+            changeLabel(obj,"Repeal an invasion: "+str(neededshot-shot))
 
             if keyPressed("w") or keyPressed("up"):
                 bulletX = 40
@@ -1602,7 +1616,7 @@ class game:
         scoret = newLabel("SCORE: "+str(score),32,"Forte","gray",0,35,'clear')
         showLabel(scoret)
 
-        obj = newLabel("Escape the planet",32,"Forte","white",0,70,'clear')
+        obj = newLabel("Leave the planet",32,"Forte","white",0,70,'clear')
         showLabel(obj)
 
         contrl1 = newLabel("Use arrows or WASD to move the ship",18,"Forte","white",0,105,'clear')
@@ -1618,6 +1632,8 @@ class game:
         playMusic(-1)
 
         while play:
+
+            changeLabel(obj,"Leave the planet: "+str(neededtime-int(time)))
             
             scrollBackground(0,5)
 
@@ -1772,6 +1788,8 @@ class game:
 
         while play:
 
+            changeLabel(obj,"Reach the planet: "+str(neededtime-int(time)))
+
             scrollBackground(-5,0)
 
             if keyPressed("w") or keyPressed("up"):
@@ -1918,6 +1936,8 @@ class game:
 
         while play:
             
+            changeLabel(obj,"Destroy "+str(neededshot-shot)+" ships")
+
             scrollBackground(0,5)
 
             if keyPressed("a") or keyPressed("left"):
@@ -2069,6 +2089,8 @@ class game:
         playMusic(-1)
 
         while play:
+
+            changeLabel(obj,"Survive the attack: "+str(neededtime-int(time)))
 
             if keyPressed("w") or keyPressed("up"):
                 bulletX = 40
@@ -2257,6 +2279,8 @@ class game:
         playMusic(-1)
 
         while play:
+
+            changeLabel(obj,"Reach the base: "+str(neededtime-int(time)))
             
             scrollBackground(0,5)
 
@@ -2410,6 +2434,8 @@ class game:
         playMusic(-1)
 
         while play:
+
+            changeLabel(obj,"Destroy all forces: "+str(neededshot-shot))
 
             if keyPressed("w") or keyPressed("up"):
                 bulletX = 40
@@ -2600,6 +2626,8 @@ class game:
 
         while play:
 
+            changeLabel(obj,"Destroy "+str(neededshot-shot)+" ships")
+
             scrollBackground(-5,0)
 
             if keyPressed("w") or keyPressed("up"):
@@ -2745,6 +2773,8 @@ class game:
         playMusic(-1)
 
         while play:
+
+            changeLabel(obj,"Reach the attack forces: "+str(neededtime-int(time)))
             
             scrollBackground(0,5)
 
@@ -2899,6 +2929,8 @@ class game:
         playMusic(-1)
 
         while play:
+
+            changeLabel(obj,"Repeal an attack: "+str(neededshot-shot))
 
             if keyPressed("w") or keyPressed("up"):
                 bulletX = 40
@@ -3086,6 +3118,8 @@ class game:
         playMusic(-1)
 
         while play:
+
+            changeLabel(obj,"Reach the base: "+str(neededtime-int(time)))
             
             scrollBackground(0,5)
 
@@ -3240,6 +3274,8 @@ class game:
         playMusic(-1)
 
         while play:
+
+            changeLabel(obj,"Destroy all forces: "+str(neededshot-shot))
 
             if keyPressed("w") or keyPressed("up"):
                 bulletX = 40
